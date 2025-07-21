@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>conditional statements in html</h1>
+        <p id="h"></p>
+        <p id="g"></p>
+        <script>
+            var time = new Date().getHours()
+            var greet
+            if(time<10){
+                greet = "good morning"
+            }
+            else if (time<20){
+                greet = "good day"
+            }
+            else{
+                greet = "good evening"
+            }
+            document.getElementById("h").innerHTML="current hour is "+time
+            document.getElementById("g").innerHTML=greet
+        </script>    
+    </body>
+</html>
