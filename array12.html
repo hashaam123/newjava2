@@ -1,0 +1,23 @@
+<html>
+    <h1>js array sort</h1>
+    <button onclick="asc()">ASC</button>
+    <button onclick="desc()">DESC</button>
+    <p id = "a"></p>
+     <p id = "b"></p>
+      <p id = "a1"></p>
+       <p id = "b1"></p>
+       <script>
+        var ar = ["kiwi","cherry","apple","mango","dragonfruit","banana","tomato"]
+        var arrl = [21,245,324,42,1333,132,867,568,98]
+        function asc(){
+            var b = ar.sort()
+            document.getElementById("a").innerHTML = b
+            document.getElementById("a1").innerHTML = (arrl.sort(function(a,b){return a-b}))
+}
+function desc(){
+            var b = ar.reverse()
+            document.getElementById("b").innerHTML = b
+            document.getElementById("b1").innerHTML = (arrl.sort(function(a,b){return b-a}))
+}
+       </script>
+</html>
