@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h2>convert js t json and vise versa</h2>
+        <p id="a"></p>
+        <script>
+            var myObj = {name:"hashaam",age :13, gender: "male"}
+            var myJSON = JSON.stringify(myObj)
+            var newObj = JSON.parse(myJSON)
+            document.getElementById("a").innerHTML = newObj.name
+        </script>
+    </body>
+</html>
